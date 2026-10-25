@@ -10,7 +10,8 @@ int main() {
     uint8_t a = (uint8_t)nhap_a;
     uint8_t b = (uint8_t)nhap_b;
     
-    uint8_t ket_qua = a + b;
+    // Đã sửa lại gọi đúng hàm gf2_4
+    uint8_t ket_qua = gf2_4(a, b, c);
 
     printf("KET_QUA : %d(0x%X)\n", ket_qua, ket_qua);  
 
